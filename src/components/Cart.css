@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Cart.css */
+
+.cart-container {
+  /* width: 100%; */
+  /* max-width: 500px; */
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cart-counting-box {
+  background-color: #f44336;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.cart-count {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.restaurant-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 27px;
+}
+
+.restaurant-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.981);
+}
+
+.restaurant-details {
+  flex: 1;
+}
+
+.restaurant-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.restaurant-address,
+.restaurant-info {
+  font-size: 14px;
+  margin: 0;
+}
+
+.cart-container .section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(6, 1, 1, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container .cart-billing {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+}
+
+/* --------Items List---------------------- */
+.cart-container .cart-billing .itemsList {
+  width: 49%;
+}
+
+.quantity-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #23f418;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.quantity-btn:hover {
+  background-color: #d32f2f;
+}
+
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* -----------------Billing Details------------------------------- */
+.cart-container .cart-billing .billing-info {
+  /* border: 1px solid black; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  margin-top: 40px;
+  width: 48%;
+  height: 800px;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.cart-container .cart-billing .billing-info .section-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+/*---------- This is for coupon section--------------- */
+
+.cart-container .cart-billing .billing-info .coupon-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.coupon-input {
+  flex: 1;
+  padding: 5px;
+  font-size: 18px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  padding-left: 30px;
+  text-transform: capitalize;
+}
+
+.coupon-section input {
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+
+.coupon-section .coupon-btn {
+  height: 62px;
+  background-color: #cd1b0f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.coupon-btn:hover {
+  background-color: #f30d0d;
+}
+
+.total-detail div:nth-child(2) {
+  padding-top: 30px;
+  border-top: 1px solid rgb(12, 10, 10, 0.2);
+}
+.total-detail .billing-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 23px;
+  margin-left: 10px;
+  margin-top: 13px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(66, 62, 62);
+}
+.total-detail .sub-total,
+.discount {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(21, 18, 18, 0.8);
+}
+.total-detail .sub-total {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(19, 13, 13, 0.2);
+}
+
+/* ---To Pay ---------------- */
+
+.to-pay-section {
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.to-pay-amount {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*  -----------------Kitchen Instruction -------------- */
+
+.kitchen-instruction {
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.instruction-textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* -------Check Out Button---------- */
+.checkout-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  width: 50%;
+  margin: 0% 25%;
+  
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.checkout-btn:hover {
+  background-color: #d32f2f;
+  cursor: pointer;
+}
+
+
+
+/* -------------CSS -2 ------------------------------- */
+
+
+
+.cart-items {
+  /* width: 700px; */
+  /* width: 90%; */
+  height: auto;
+  display: flex;
+  text-align: justify;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+}
+.cart-items .item-photo {
+  position: relative;
+  height: 165px;
+  width: 200px;
+  width: 30%;
+  border-radius: 2px;
+  margin: 10px 3px 10px 10px;
+  border-right: 1px solid rgb(141, 135, 135, 0.2);
+}
+.cart-items .item-photo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 165px;
+  border-radius: 10px;
+}
+.cart-items .item-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 210px;
+  margin: 10px 10px 10px 3px;
+  padding: 0;
+}
+.cart-items .item-details .detail {
+  position: relative;
+  height: auto;
+  padding-left: 10px;
+  height: 150px;
+  border-bottom: 1px solid rgb(134, 128, 128, 0.2);
+}
+.cart-items .item-details .detail .fa-xmark-circle {
+  position: absolute;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  right: 4px;
+  top: 0px;
+  font-size: 28px;
+  border-bottom: 2px solid rgb(14, 13, 13);
+}
+.cart-items .item-details .detail .fa-xmark-circle:hover {
+  color: black;
+  background-color: white;
+  font-size: 30px;
+  border-bottom: none;
+}
+.cart-items .item-details .detail h4,
+p {
+  margin: 0px;
+  padding-left: 9px;
+}
+.cart-items .item-details .detail h4 {
+  padding: 9px;
+  padding-right: 94px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.cart-items .item-details .detail .fa-circle {
+  margin-left: 10px;
+  color: red;
+}
+.cart-items .item-details .detail p:nth-child(3) {
+  font-size: 18px;
+  color: rgb(96, 92, 92);
+}
+.cart-items .item-details .detail p:nth-child(4),
+p:nth-child(5) {
+  padding-top: 5px;
+}
+.cart-items .item-details .detail p:nth-child(4) span,
+p:nth-child(5) span {
+  padding-left: 10px;
+}
+.cart-items .item-details .detail p:nth-child(4) i,
+p:nth-child(5) i {
+  color: rgba(14, 201, 14, 0.41);
+  font-size: 23px;
+  font-weight: 900;
+}
+.cart-items .item-details .quantity-price {
+
+  display: flex;
+  position: absolute;
+  bottom: -10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.cart-items .item-details .quantity-price .item-quantity em {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cart-items .item-details .quantity-price .item-quantity button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 16px;
+}
+.cart-items .item-details .quantity-price .item-quantity span {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 11px 5.3px 11px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.cart-items .item-details .quantity-price p:nth-child(2) {
+  margin-left: 30px;
+  margin-right: 35px;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+}
+.cart-items .item-details .quantity-price p:nth-child(2) span {
+  margin-left: 5px;
+}
+
+
+
+
+
+
+/* -----------------MEDIA QUERY------------------- */
+
+
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .cart-container {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .restaurant-section {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .restaurant-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .cart-container .cart-billing {
+    flex-direction: column;
+  }
+  
+  .cart-container .cart-billing .billing-info {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    height: auto;
+  }
+  
+  .cart-container .cart-billing .billing-info .coupon-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .cart-container .cart-billing .billing-info .coupon-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .total-detail .billing-row {
+    font-size: 18px;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* For screens between 601px and 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .cart-container {
+    max-width: 800px;
+  }
+  
+  .restaurant-section {
+    padding: 20px;
+  }
+  
+  .restaurant-details {
+    padding-right: 20px;
+  }
+  
+  .cart-container .cart-billing .billing-info {
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  .cart-items {
+    flex-direction: column;
+  }
+  
+  .cart-items .item-photo {
+    width: 100%;
+    margin: 10px 0;
+    border-right: none;
+    text-align: center;
+  }
+  
+  .cart-items .item-details {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .cart-items .item-details .detail {
+    height: auto;
+  }
+  
+  .cart-items .item-details .quantity-price {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+/* For screens larger than 1024px */
+@media (min-width: 1025px) {
+  /* Add your specific CSS rules for larger screens here */
+}
+

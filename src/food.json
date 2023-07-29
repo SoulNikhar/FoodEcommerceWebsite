@@ -1,0 +1,896 @@
+
+[
+  {
+    "id": "00001",
+    "attribute": 1,
+    "name": "Fruit Salad",
+    "price": 599,
+    "type": "Nourishing Meals",
+    "food_type": "Veg",
+    "link": "https://example.com/fruit_salad.jpg",
+    "description": "A refreshing mix of fresh seasonal fruits. Served with a light dressing.",
+    "benefits": "Provides essential vitamins and minerals, hydrates the body, and promotes digestive health.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "  Vitamin A"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00002",
+    "attribute": 2,
+    "name": "Vegetable Stir-Fry",
+    "price": 899,
+    "type": "Nourishing Meals",
+    "food_type": "Veg",
+    "link": "https://example.com/vegetable_stir_fry.jpg",
+    "description": "A flavorful combination of stir-fried vegetables with a choice of sauce.",
+    "benefits": "Packed with antioxidants, fiber, and phytonutrients. Supports immune function and aids in weight management.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "Vitamin K ,"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00003",
+    "attribute": 3,
+    "name": "Quinoa Salad",
+    "price": 699,
+    "type": "Nourishing Meals",
+    "food_type": "Veg",
+    "link": "https://example.com/quinoa_salad.jpg",
+    "description": "A light and nutritious salad made with quinoa, mixed greens, and assorted vegetables.",
+    "benefits": "Rich in plant-based protein, fiber, and essential amino acids. Supports heart health and provides sustained energy.",
+    "vitamins": [
+      "Vitamin B6 ,",
+      "Vitamin E"
+    ],
+    "proteins": [
+      "Complete proteins"
+    ]
+  },
+  {
+    "id": "00004",
+    "attribute": 4,
+    "name": "Veggie Burger",
+    "price": 999,
+    "type": "Veggie Delights",
+    "food_type": "Veg",
+    "link": "https://example.com/veggie_burger.jpg",
+    "description": "A delicious plant-based patty made from a blend of vegetables, legumes, and grains.",
+    "benefits": "A healthy alternative to traditional burgers. Provides fiber, vitamins, and minerals while being low in saturated fats.",
+    "vitamins": [
+      "Vitamin K ,",
+      "    Vitamin B6 ,"
+    ],
+    "proteins": [
+      "Plant-based proteins"
+    ]
+  },
+  {
+    "id": "00005",
+    "attribute": 5,
+    "name": "Mushroom Risotto",
+    "price": 1299,
+    "type": "Veggie Delights",
+    "food_type": "Veg",
+    "link": "https://example.com/mushroom_risotto.jpg",
+    "description": "Creamy risotto cooked with flavorful mushrooms, herbs, and a touch of parmesan cheese.",
+    "benefits": "Mushrooms are a good source of B vitamins and minerals. Supports immune function and provides antioxidants.",
+    "vitamins": [
+      "  Vitamin D",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00006",
+    "attribute": 6,
+    "name": "Spinach and Feta Stuffed Chicken",
+    "price": 1599,
+    "type": "Protein-packed Meals",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/spinach_feta_chicken.jpg",
+    "description": "Tender chicken breasts filled with a savory mixture of spinach, feta cheese, and herbs.",
+    "benefits": "High in protein and essential nutrients. Supports muscle growth and repair.",
+    "vitamins": [
+      "Vitamin K ,",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00007",
+    "attribute": 7,
+    "name": "Grilled Salmon",
+    "price": 1899,
+    "type": "Protein-packed Meals",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/grilled_salmon.jpg",
+    "description": "Fresh salmon fillet marinated in herbs and grilled to perfection. Served with a side of vegetables.",
+    "benefits": "Rich in omega-3 fatty acids and high-quality protein. Promotes heart health and supports brain function.",
+    "vitamins": [
+      "  Vitamin D",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00008",
+    "attribute": 8,
+    "name": "Beef Stir-Fry",
+    "price": 2099,
+    "type": "Protein-packed Meals",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/beef_stir_fry.jpg",
+    "description": "Tender beef strips stir-fried with vegetables and a choice of sauce.",
+    "benefits": "Provides high-quality protein and essential amino acids. Supports muscle development and repair.",
+    "vitamins": [
+      "  Vitamin B12",
+      "    Vitamin B6 ,"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00009",
+    "attribute": 9,
+    "name": "Pasta Primavera",
+    "price": 1199,
+    "type": "Italian Delights",
+    "food_type": "Veg",
+    "link": "https://example.com/pasta_primavera.jpg",
+    "description": "A classic Italian pasta dish with fresh seasonal vegetables, herbs, and Parmesan cheese.",
+    "benefits": "Provides energy from complex carbohydrates and a variety of vegetables. Rich in vitamins and minerals.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "Vitamin K ,"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00010",
+    "attribute": 10,
+    "name": "Margherita Pizza",
+    "price": 999,
+    "type": "Italian Delights",
+    "food_type": "Veg",
+    "link": "https://example.com/margherita_pizza.jpg",
+    "description": "A traditional pizza topped with fresh tomatoes, mozzarella cheese, and basil leaves.",
+    "benefits": "Moderate consumption can provide calcium, protein, and vitamins from the cheeseand tomato sauce.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "  Vitamin A"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00011",
+    "attribute": 11,
+    "name": "Chicken Alfredo",
+    "price": 1499,
+    "type": "Italian Delights",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/chicken_alfredo.jpg",
+    "description": "Creamy pasta dish made with grilled chicken, Parmesan cheese, and a rich Alfredo sauce.",
+    "benefits": "Provides a good amount of protein and energy from the chicken and pasta. Rich in flavor.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00012",
+    "attribute": 12,
+    "name": "Tiramisu",
+    "price": 699,
+    "type": "Sweet Indulgences",
+    "food_type": "Veg",
+    "link": "https://example.com/tiramisu.jpg",
+    "description": "An Italian dessert made with layers of ladyfingers, mascarpone cheese, and coffee-flavored syrup.",
+    "benefits": "Provides a delightful combination of flavors and a moderate amount of energy.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00013",
+    "attribute": 13,
+    "name": "Chocolate Brownie",
+    "price": 499,
+    "type": "Sweet Indulgences",
+    "food_type": "Veg",
+    "link": "https://example.com/chocolate_brownie.jpg",
+    "description": "A rich and fudgy chocolate dessert that melts in your mouth. Served warm with a scoop of ice cream.",
+    "benefits": "Offers a small dose of antioxidants and a boost of happiness.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00014",
+    "attribute": 14,
+    "name": "Mixed Berry Smoothie",
+    "price": 399,
+    "type": "Refreshing Beverages",
+    "food_type": "Veg",
+    "link": "https://example.com/mixed_berry_smoothie.jpg",
+    "description": "A refreshing blend of mixed berries, yogurt, and a touch of honey.",
+    "benefits": "Packed with antioxidants, vitamins, and minerals. Supports hydration and boosts immune function.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "Vitamin K ,"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00015",
+    "attribute": 15,
+    "name": "Iced Caramel Macchiato",
+    "price": 449,
+    "type": "Refreshing Beverages",
+    "food_type": "Veg",
+    "link": "https://example.com/iced_caramel_macchiato.jpg",
+    "description": "A delightful combination of espresso, milk, and caramel syrup served over ice.",
+    "benefits": "Provides a caffeine boost and a touch of indulgence. Great for a refreshing pick-me-up.",
+    "vitamins": [
+      "N/A"
+    ],
+
+
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00016",
+    "attribute": 16,
+    "name": "Mint Lemonade",
+    "price": 349,
+    "type": "Refreshing Beverages",
+    "food_type": "Veg",
+    "link": "https://example.com/mint_lemonade.jpg",
+    "description": "A cooling drink made with freshly squeezed lemon juice, mint leaves, and a hint of sweetness.",
+    "benefits": "Rich in   Vitamin C ,, aids digestion, and provides a refreshing sensation.",
+    "vitamins": [
+      "  Vitamin C ,"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00017",
+    "attribute": 17,
+    "name": "Chickpea Salad",
+    "price": 599,
+    "type": "Nourishing Meals",
+    "food_type": "Veg",
+    "link": "https://example.com/chickpea_salad.jpg",
+    "description": "A satisfying salad made with chickpeas, fresh vegetables, and a zesty dressing.",
+    "benefits": "High in fiber and plant-based protein. Supports satiety and provides essential nutrients.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "Vitamin K ,"
+    ],
+    "proteins": [
+      "Plant-based proteins"
+    ]
+  },
+  {
+    "id": "00018",
+    "attribute": 18,
+    "name": "Paneer Tikka",
+    "price": 799,
+    "type": "Nourishing Meals",
+    "food_type": "Veg",
+    "link": "https://example.com/paneer_tikka.jpg",
+    "description": "Marinated cubes of paneer (Indian cottage cheese) grilled to perfection. Served with mint chutney.",
+    "benefits": "Good source of protein and calcium. Provides a flavorful Veg option for grilling enthusiasts.",
+    "vitamins": [
+      "  Vitamin D",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00019",
+    "attribute": 19,
+    "name": "Baked Zucchini Fries",
+    "price": 699,
+    "type": "Nourishing Meals",
+    "food_type": "Veg",
+    "link": "https://example.com/baked_zucchini_fries.jpg",
+    "description": "Oven-baked zucchini sticks coated with breadcrumbs and Italian seasoning.",
+    "benefits": "Low in calories and a good source of vitamins and minerals. Provides a healthier alternative to traditional fries.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "Vitamin K ,"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00020",
+    "attribute": 20,
+    "name": "Honey Glazed Carrots",
+    "price": 599,
+    "type": "Nourishing Meals",
+    "food_type": "Veg",
+    "link": "https://example.com/honey_glazed_carrots.jpg",
+    "description": "Tender carrots roasted in a honey glaze. A delightful side dish.",
+    "benefits": "Provides beta-carotene, vitamins, and fiber. Supports eye health and adds a touch of sweetness to your meal.",
+    "vitamins": [
+      "  Vitamin A",
+      "Vitamin K ,"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00021",
+    "attribute": 21,
+    "name": "Chicken Tikka Masala",
+    "price": 1299,
+    "type": "Flavors of India",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/chicken_tikka_masala.jpg",
+    "description": "Tender pieces of grilled chicken cooked in a rich tomato-based sauce with aromatic spices.",
+    "benefits": "Aromatic and flavorful dish. Provides a good amount of protein and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00022",
+    "attribute": 22,
+    "name": "Palak Paneer",
+    "price": 999,
+    "type": "Flavors of India",
+    "food_type": "Veg",
+    "link": "https://example.com/palak_paneer.jpg",
+    "description": "A popular Indian dish made with pureed spinach and paneer (Indian cottage cheese).",
+    "benefits": "Rich in iron, calcium, and vitamins. Provides a healthy Veg option with a burst of flavors.",
+    "vitamins": [
+      "  Vitamin D",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00023",
+    "attribute": 23,
+    "name": "Biryani",
+    "price": 1499,
+    "type": "Flavors of India",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/biryani.jpg",
+    "description": "A fragrant rice dish cooked with aromatic spices, basmati rice, and a choice of meat or vegetables.",
+    "benefits": "A flavorful and satisfying meal. Provides carbohydrates, proteins, and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Varies (based on meat/vegetables)"
+    ]
+  },
+  {
+    "id": "00024",
+    "attribute": 24,
+    "name": "Butter Chicken",
+    "price": 1299,
+    "type": "Flavors of India",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/butter_chicken.jpg",
+    "description": "Tender chicken cooked in a creamy tomato-based sauce with butter and spices.",
+    "benefits": "A rich and indulgent dish. Provides a good amount of protein and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00025",
+    "attribute": 25,
+    "name": "Sushi Platter",
+    "price": 1899,
+    "type": "Asian Delights",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/sushi_platter.jpg",
+    "description": "Assorted sushi rolls made with fresh fish, vegetables, and sticky rice. Served with soy sauce and wasabi.",
+    "benefits": "Provides a combination of flavors and textures. Rich in omega-3 fatty acids and essential nutrients.",
+    "vitamins": [
+      "  Vitamin D",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "Varies (based on fish/vegetables)"
+    ]
+  },
+  {
+    "id": "00026",
+    "attribute": 26,
+    "name": "Pad Thai",
+    "price": 1199,
+    "type": "Asian Delights",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/pad_thai.jpg",
+    "description": "A popular Thai dish made with stir-fried rice noodles, shrimp, tofu, peanuts, and a tangy sauce.",
+    "benefits": "A harmonious blend of flavors. Provides carbohydrates, proteins, and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin C ,"
+    ],
+    "proteins": [
+      "Varies (based on shrimp/tofu)"
+    ]
+  },
+  {
+    "id": "00027",
+    "attribute": 27,
+    "name": "Miso Soup",
+    "price": 399,
+    "type": "Asian Delights",
+    "food_type": "Veg",
+    "link": "https://example.com/miso_soup.jpg",
+    "description": "A traditional Japanese soup made with miso paste, tofu, seaweed, and scallions.",
+    "benefits": "A comforting and nourishing soup. Provides probiotics, antioxidants, and essential nutrients.",
+    "vitamins": [
+      "Vitamin K ,",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "Plant-based proteins"
+    ]
+  },
+  {
+    "id": "00028",
+    "attribute": 28,
+    "name": "Chicken Satay",
+    "price": 899,
+    "type": "Asian Delights",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/chicken_satay.jpg",
+    "description": "Grilled chicken skewers marinated in a flavorful blend of spices and served with peanut sauce.",
+    "benefits": "A popular street food dish. Provides a good amount of protein and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00029",
+    "attribute": 29,
+    "name": "Greek Salad",
+    "price": 699,
+    "type": "Fresh Salads",
+    "food_type": "Veg",
+    "link": "https://example.com/greek_salad.jpg",
+    "description": "A refreshing salad made with crisp lettuce, juicy tomatoes, cucumbers, olives, feta cheese, and a tangy dressing.",
+    "benefits": "Provides a variety of vegetables, antioxidants, and a good dose of calcium from the feta cheese.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "Vitamin K ,"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00030",
+    "attribute": 30,
+    "name": "Caprese Salad",
+    "price": 799,
+    "type": "Fresh Salads",
+    "food_type": "Veg",
+    "link": "https://example.com/caprese_salad.jpg",
+    "description": "A simple and elegant salad made with ripe tomatoes, fresh mozzarella cheese, basil leaves, and balsamic glaze.",
+    "benefits": "Offers a burst of flavors and a good source of calcium and antioxidants.",
+    "vitamins": [
+      "Vitamin K ,",
+      "  Vitamin A"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00031",
+    "attribute": 31,
+    "name": "Cobb Salad",
+    "price": 899,
+    "type": "Fresh Salads",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/cobb_salad.jpg",
+    "description": "A hearty salad made with grilled chicken, crispy bacon, hard-boiled eggs, avocado, tomatoes, and blue cheese.",
+    "benefits": "A satisfying and protein-packed meal. Provides a variety of vegetables and essential nutrients.",
+    "vitamins": [
+      "Vitamin K ,",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00032",
+    "attribute": 32,
+    "name": "Quinoa Salad",
+    "price": 799,
+    "type": "Fresh Salads",
+    "food_type": "Veg",
+    "link": "https://example.com/quinoa_salad.jpg",
+    "description": "A nutritious salad made with fluffy quinoa, fresh vegetables, herbs, and a zesty dressing.",
+    "benefits": "High in protein, fiber, and essential nutrients. Provides a gluten-free option.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "Vitamin K ,"
+    ],
+    "proteins": [
+      "Plant-based proteins"
+    ]
+  },
+  {
+    "id": "00033",
+    "attribute": 33,
+    "name": "Caesar Salad",
+    "price": 699,
+    "type": "Fresh Salads",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/caesar_salad.jpg",
+    "description": "A classic salad made with crisp romaine lettuce, Parmesan cheese, croutons, and a creamy Caesar dressing.",
+    "benefits": "Offers a blend of textures and flavors. Provides calcium, vitamins, and a dose of satisfaction.",
+    "vitamins": [
+      "Vitamin K ,",
+      "  Vitamin A"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00034",
+    "attribute": 34,
+    "name": "Classic Burger",
+    "price": 899,
+    "type": "Burgers & Sandwiches",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/classic_burger.jpg",
+    "description": "A juicy beef patty topped with lettuce, tomatoes, onions, pickles, and a special sauce. Served in a toasted bun.",
+    "benefits": "A classic favorite. Provides a good amount of protein and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00035",
+    "attribute": 35,
+    "name": "Veggie Burger",
+    "price": 799,
+    "type": "Burgers & Sandwiches",
+    "food_type": "Veg",
+    "link": "https://example.com/veggie_burger.jpg",
+    "description": "A flavorful patty made with a blend of vegetables, grains, and spices. Served in a toasted bun with lettuce, tomatoes, and mayo.",
+    "benefits": "A tasty and nutritious Veg option. Provides plant-based proteins and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Plant-based proteins"
+    ]
+  },
+  {
+    "id": "00036",
+    "attribute": 36,
+    "name": "Grilled Chicken Sandwich",
+    "price": 899,
+    "type": "Burgers & Sandwiches",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/grilled_chicken_sandwich.jpg",
+    "description": "A grilled chicken breast topped with lettuce, tomatoes, onions, and mayo. Served in a toasted bun.",
+    "benefits": "A healthier alternative to fried chicken. Provides a good amount of protein and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00037",
+    "attribute": 37,
+    "name": "Caprese Sandwich",
+    "price": 799,
+    "type": "Burgers & Sandwiches",
+    "food_type": "Veg",
+    "link": "https://example.com/caprese_sandwich.jpg",
+    "description": "A delightful sandwich made with fresh mozzarella cheese, tomatoes, basil leaves, and balsamic glaze. Served on ciabatta bread.",
+    "benefits": "Offers a combination of flavors and textures. Provides a good dose of calcium and vitamins.",
+    "vitamins": [
+      "Vitamin K ,",
+      "  Vitamin A"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00038",
+    "attribute": 38,
+    "name": "Fish and Chips",
+    "price": 1099,
+    "type": "Burgers & Sandwiches",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/fish_and_chips.jpg",
+    "description": "Crispy battered fish fillets served with golden fries and tartar sauce.",
+    "benefits": "A classic British dish. Provides a good amount of protein and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00039",
+    "attribute": 39,
+    "name": "Margherita Pizza",
+    "price": 999,
+    "type": "Pizza Delights",
+    "food_type": "Veg",
+    "link": "https://example.com/margherita_pizza.jpg",
+    "description": "A classic pizza topped with fresh tomatoes, mozzarella cheese, basil leaves, and a drizzle of olive oil.",
+    "benefits": "Simple yet flavorful. Provides a good dose of calcium and essential nutrients.",
+    "vitamins": [
+      "Vitamin K ,",
+      "  Vitamin A"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00040",
+    "attribute": 40,
+    "name": "Pepperoni Pizza",
+    "price": 1099,
+    "type": "Pizza Delights",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/pepperoni_pizza.jpg",
+    "description": "A classic pizza topped with spicy pepperoni slices, mozzarella cheese, and tomato sauce.",
+    "benefits": "A crowd-pleasing favorite. Provides a good amount of protein and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00041",
+    "attribute": 41,
+    "name": "Mushroom Pizza",
+    "price": 999,
+    "type": "Pizza Delights",
+    "food_type": "Veg",
+    "link": "https://example.com/mushroom_pizza.jpg",
+    "description": "A flavorful pizza topped with sautéed mushrooms, mozzarella cheese, garlic, and herbs.",
+    "benefits": "A delicious Veg option. Provides a good dose of vitamins and essential nutrients.",
+    "vitamins": [
+      "  Vitamin D",
+      "  Vitamin B12"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00042",
+    "attribute": 42,
+    "name": "BBQ Chicken Pizza",
+    "price": 1099,
+    "type": "Pizza Delights",
+    "food_type": "Non-Veg",
+    "link": "https://example.com/bbq_chicken_pizza.jpg",
+    "description": "A tangy and smoky pizza topped with grilled chicken, BBQ sauce, red onions, and mozzarella cheese.",
+    "benefits": "A flavorful twist on a classic pizza. Provides a good amount of protein and essential nutrients.",
+    "vitamins": [
+      "  Vitamin B12",
+      "  Vitamin D"
+    ],
+    "proteins": [
+      "Animal-based proteins"
+    ]
+  },
+  {
+    "id": "00043",
+    "attribute": 43,
+    "name": "Chocolate Cake",
+    "price": 799,
+    "type": "Dessert Indulgence",
+    "food_type": "Veg",
+    "link": "https://example.com/chocolate_cake.jpg",
+    "description": "A moist and decadent chocolate cake layered with rich chocolate frosting.",
+    "benefits": "A sinful treat for chocolate lovers. Provides a dose of happiness and indulgence.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00044",
+    "attribute": 44,
+    "name": "Cheesecake",
+    "price": 899,
+    "type": "Dessert Indulgence",
+    "food_type": "Veg",
+    "link": "https://example.com/cheesecake.jpg",
+    "description": "A creamy and velvety cheesecake with a buttery graham cracker crust.",
+    "benefits": "A classic dessert with a smooth texture. Provides a dose of satisfaction and calcium.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00045",
+    "attribute": 45,
+    "name": "Tiramisu",
+    "price": 899,
+
+
+    "type": "Dessert Indulgence",
+    "food_type": "Veg",
+    "link": "https://example.com/tiramisu.jpg",
+    "description": "An Italian delight made with layers of espresso-soaked ladyfingers, mascarpone cheese, and cocoa.",
+    "benefits": "A rich and indulgent dessert. Provides a burst of flavors and a dose of happiness.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00046",
+    "attribute": 46,
+    "name": "Fruit Salad",
+    "price": 699,
+    "type": "Dessert Indulgence",
+    "food_type": "Veg",
+    "link": "https://example.com/fruit_salad.jpg",
+    "description": "A refreshing combination of fresh fruits, such as watermelon, pineapple, grapes, and berries.",
+    "benefits": "A light and healthy dessert. Provides a variety of vitamins, antioxidants, and hydration.",
+    "vitamins": [
+      "  Vitamin C ,",
+      "  Vitamin A"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00047",
+    "attribute": 47,
+    "name": "Ice Cream Sundae",
+    "price": 799,
+    "type": "Dessert Indulgence",
+    "food_type": "Veg",
+    "link": "https://example.com/ice_cream_sundae.jpg",
+    "description": "A delightful treat made with scoops of ice cream, whipped cream, chocolate sauce, and a cherry on top.",
+    "benefits": "A classic dessert for ice cream lovers. Provides a dose of sweetness and happiness.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  },
+  {
+    "id": "00048",
+    "attribute": 48,
+    "name": "Chocolate Chip Cookie",
+    "price": 499,
+    "type": "Dessert Indulgence",
+    "food_type": "Veg",
+    "link": "https://example.com/chocolate_chip_cookie.jpg",
+    "description": "A chewy and chocolatey cookie loaded with chocolate chips.",
+    "benefits": "A classic treat loved by all ages. Provides a dose of nostalgia and indulgence.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00049",
+    "attribute": 49,
+    "name": "Brownie",
+    "price": 599,
+    "type": "Dessert Indulgence",
+    "food_type": "Veg",
+    "link": "https://example.com/brownie.jpg",
+    "description": "A fudgy and rich chocolate brownie with a crinkly top.",
+    "benefits": "A decadent treat for chocolate lovers. Provides a dose of indulgence and happiness.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "N/A"
+    ]
+  },
+  {
+    "id": "00050",
+    "attribute": 50,
+    "name": "Panna Cotta",
+    "price": 799,
+    "type": "Dessert Indulgence",
+    "food_type": "Veg",
+    "link": "https://example.com/panna_cotta.jpg",
+    "description": "A silky and creamy Italian dessert made with sweetened cream and topped with fruit sauce.",
+    "benefits": "A delicate and luxurious dessert. Provides a smooth texture and a dose of indulgence.",
+    "vitamins": [
+      "N/A"
+    ],
+    "proteins": [
+      "Dairy-based proteins"
+    ]
+  }
+]

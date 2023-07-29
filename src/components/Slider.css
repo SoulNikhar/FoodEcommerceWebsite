@@ -1,0 +1,140 @@
+.categories-body {
+  background-color: transparent;
+}
+.slider {
+  position: relative;
+  margin-top: 30px;
+  left: 260px;
+  height: fit-content;
+  /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.slider img {
+  width: 100%;
+}
+
+.categories {
+  margin-top: 17px;
+  text-align: center;
+  /* border: 2px solid black; */
+  width: 100%;
+  /* border-radius: 15px; */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+.categories p {
+  margin: 0;
+  margin-top: 9px;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.categories span {
+  font-size: 15px;
+}
+
+.categories .types {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 9px;
+  margin-bottom: 12px;
+  padding-bottom: 18px;
+  background-color: transparent;
+}
+
+.categories .types .cname {
+  margin: 0px 3px 0px 3px ;
+  border-radius: 3px;
+  width: 145px;
+  height: 160px;
+  background-color: white;
+  color: black;
+}
+.categories .types .cname img {
+  margin-top: 4px;
+  width: 95px;
+  height: 99px;
+  border-radius: 50%;
+}
+
+.categories .types .cname .name {
+  margin-top: -8px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: black;
+  padding: 3px;
+  border-top: 1px snow solid;
+  border-bottom: 1px snow solid;
+}
+.categories .types .cname .quantity {
+  margin: 0px;
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.categories .types .cname {
+  background-image: linear-gradient(
+    to top right,
+    rgb(139, 147, 139),
+    rgb(193, 217, 181)
+  );
+  color: rgb(250, 253, 251);
+}
+
+.categories .types .cname1:hover {
+  background-image: linear-gradient(
+    to top right,
+    rgb(10, 132, 30),
+    rgb(142, 232, 100)
+  );
+  color: rgb(250, 253, 251);
+}
+
+.categories .types .cname2:hover {
+  background-image: linear-gradient(
+    to top right,
+    rgb(254, 121, 13),
+    rgb(222, 215, 0)
+  );
+  color: white;
+}
+
+.categories .types .cname3:hover {
+  background-image: linear-gradient(
+    to top right,
+    rgb(254, 13, 250),
+    rgb(246, 205, 245)
+  );
+  color: white;
+}
+
+.categories .types .cname4:hover {
+  background-image: linear-gradient(
+    to top right,
+    rgb(251, 243, 243),
+    rgb(20, 18, 18)
+  );
+  color: white;
+}
+
+.categories .types .cname5:hover {
+  background-image: linear-gradient(to top right, red, yellow);
+  color: white;
+}
+
+/* -------- This is for poster ------------ */
+
+.middle-body .poster{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+}
+.middle-body .poster img{
+  border-radius: 10px;
+  width: 100%;
+  
+}

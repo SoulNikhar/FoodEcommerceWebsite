@@ -1,0 +1,249 @@
+
+/*  --------------------- THIS IS FOR FLIP ONE ---------------------------------- */
+/*  --------------------- THIS IS FOR FLIP ONE ---------------------------------- */
+/*  --------------------- THIS IS FOR FLIP ONE ---------------------------------- */
+
+
+.productList {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.productList .product.flipped {
+  transform: rotateY(180deg);
+}
+
+.productList .product {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  border-radius: 9px;
+  background-color: rgb(112, 109, 109);
+  margin: 5px;
+  background-image: linear-gradient(
+    to top right,
+    rgb(255, 255, 255),
+    rgba(240, 233, 233, 0.999)
+  );
+  margin-right: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgb(109, 106, 106, 0.6);
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.productList .product img {
+  position: absolute;
+  box-shadow: 3px 3px 5px rgb(17, 16, 16, 0.3);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: 10px;
+  left: 69px;
+  width: 140px;
+  height: 140px;
+}
+
+.productList .product .product-options {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 90px;
+  width: 29px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.productList .product .product-options i {
+  padding: 7px 7.5px 7px 7px;
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgb(56, 53, 53, 0.7);
+}
+
+.productList .product .product-options i:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  cursor: pointer;
+}
+
+.productList .product .product-details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 125px;
+  border-top: 1px solid rgb(15, 13, 13, 0.1);
+  text-align: center;
+}
+
+.productList .product .product-details p {
+  font-size: 14.5px;
+  margin: 3px;
+  padding: 0px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.productList .product .product-details p:nth-child(1) {
+  font-size: 15px;
+  font-weight: 800;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.productList .product .product-details p:nth-child(2) span {
+  font-weight: 600;
+  color: #766d6d;
+}
+
+.productList .product .product-details p:nth-child(2) span:nth-child(1) {
+  margin: 12px;
+  text-decoration: line-through #383434 0.5px;
+}
+
+.productList .product .product-details p:nth-child(2) span:nth-child(2) {
+  color: rgb(250, 4, 4);
+}
+
+.productList .product .product-details p:nth-child(3) span i {
+  color: rgb(241, 12, 12);
+}
+
+.productList .product .product-details p:nth-child(3) span {
+  color: #433838;
+}
+
+.productList .product .product-details button {
+  position: absolute;
+  bottom: 2px;
+  right: 30%;
+  width: 90px;
+  height: 31px;
+  font-size: 15px;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+}
+
+.productList .product .product-details button:hover {
+  background-color: rgba(253, 169, 13, 0.91);
+  cursor: pointer;
+}
+
+
+/* -----------Product Back--------------------- */
+
+
+.productList .product .product-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top right,
+    rgb(255, 255, 255),
+    rgba(240, 233, 233, 0.999)
+  );
+  border-radius: 9px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  box-shadow: 0px 4px 6px rgb(109, 106, 106, 0.6);
+}
+
+.productList .product .product-back i {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  padding: 7px 7.5px 7px 7px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px rgb(56, 53, 53, 0.7);
+  cursor: pointer;
+}
+
+.productList .product .product-back .food-details {
+  position: absolute;
+  top: 35px;
+  font-size: 13px;
+  margin-left: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.productList .product .product-back .food-details p {
+  color: #5b5353;
+  margin: 3px;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.productList .product .product-back .food-details p span {
+  font-weight: 700;
+  font-size: 15px;
+  color: #000000;
+}
+
+.productList .product .product-back i:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .productList .product {
+    width: 48%;
+    margin: 10px 0;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .productList .product img {
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .productList .product .product-details {
+    height: 80px;
+  }
+
+  .productList .product .product-details p {
+    font-size: 10px;
+  }
+
+  .productList .product .product-details p:nth-child(1) {
+    font-size: 12px;
+  }
+
+  .productList .product .product-details p:nth-child(2) span:nth-child(1) {
+    margin: 8px;
+  }
+
+  .productList .product .product-details button {
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .productList .product .product-back .food-details {
+    top: 30px;
+    font-size: 11px;
+    margin-left: 10px;
+  }
+
+  .productList .product .product-back .food-details p {
+    margin: 1px;
+    margin-top: 3px;
+    font-size: 9px;
+  }
+
+  .productList .product .product-back .food-details p span {
+    font-size: 12px;
+  }
+}

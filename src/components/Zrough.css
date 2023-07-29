@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.front-page{
+  position: relative;
+  margin: 130px  
+}
+.front-page .front-body {
+  position: absolute;
+  width: 100%;
+  height: auto;
+
+}
+
+/*  this is for all the boxs that are present in the front page  */
+.front-page .front-body .box {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to top right,
+    rgb(255, 255, 255),
+    rgba(240, 233, 233, 0.499)
+  );
+}
+
+/*  this is for 3 boxes  */
+.front-page .front-body .boxes {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/*  this is for top-products  */
+
+.front-page .front-body .top-products {
+  /* border: 2px solid red; */
+  margin-top: 40px;
+  text-align: center;
+}
+.front-page .front-body .top-products p {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.front-page .front-body .top-products .top-products-box {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.front-page .front-body .top-products .top-products-box .box {
+  margin-top: 10px;
+}
+.front-page .front-body .top-products .top-products-box .box img {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgb(15, 12, 12, 0.2);
+}
+.front-page .front-body .top-products .top-products-box .box p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.front-page .front-body .top-products .top-products-box .box button{
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  background-color: rgb(130, 125, 125,0.1);
+}
+
+.front-page .front-body .top-products .top-products-box .box img:hover{
+  cursor: pointer;
+  border-radius: 50%;
+}
+.front-page .front-body .top-products .top-products-box .box button:hover{
+  color: black;
+  background-color: rgb(130, 125, 125,0.5);
+}
+.ftr{
+  position: relative;
+  
+  
+}
