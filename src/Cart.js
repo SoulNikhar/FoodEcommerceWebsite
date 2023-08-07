@@ -1,78 +1,116 @@
-import React from "react";
+import React, { useState } from "react";
 import "./components/Cart.css";
-//import { useCartContext } from "./CartContext";
-//import { getBasketTotal } from "./reducer";
-import { useStateValue } from "./StateProvider";
-
+import { useCartContext } from "./CartContext";
 const Cart = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  const { cartItems } = useCartContext();
+  const [cartData, setCartData] = useState(cartItems);
 
+  // This is for increment purpose for the product quantity
   const increaseQuantity = (itemId) => {
-    dispatch({ type: "INCREMENT_QUANTITY", payload: itemId });
+    {console.log(itemId)}
+    setCartData((prevItems) =>
+      prevItems.map((item) =>
+        item.id === itemId ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
   };
 
+  //  This is for decrement purpose the product quantity
   const decreaseQuantity = (itemId) => {
-    dispatch({ type: "DECREMENT_QUANTITY", payload: itemId });
+    setCartData((prevItems) =>
+      prevItems.map((item) =>
+        item.id === itemId && item.quantity > 1
+          ? { ...item, quantity: item.quantity - 1 }
+          : item
+      )
+    );
+  };
+  //  This is removing purpose
+  const removeItem = (itemId) => {
+    console.log(itemId);
+    setCartData((prevItems) => prevItems.filter((item) => item.id !== itemId));
   };
 
-  const removeItem = (itemId) => {
-    dispatch({ type: "REMOVE_FROM_CART", payload: itemId });
+  const handleQuantityChange = (itemId, value) => {
+    setCartData((prevItems) =>
+      prevItems.map((item) =>
+        item.id === itemId ? { ...item, quantity: item.quantity + value } : item
+      )
+    );
+  };
+
+  const handleCartlyCoupon = () => {
+    // Cartly coupon logic
+  };
+
+  const handleKitchenInstructionChange = (e) => {
+    // Handle kitchen instruction change
+  };
+
+  const handleCheckout = () => {
+    // Handle checkout logic
   };
 
   const calculateTotal = () => {
     let total = 0;
-    basket.forEach((item) => {
+    cartData.forEach((item) => {
       total += item.quantity * item.price;
     });
     return total;
   };
 
   const getTotalItems = () => {
-    const totalItems = basket.reduce((total, item) => total + item.quantity, 0);
+    const totalItems = cartData.reduce(
+      (total, item) => total + item.quantity,
+      0
+    );
     return totalItems === 1 ? `${totalItems} item` : `${totalItems} items`;
   };
 
   const getTotalPrice = () => {
-    const totalPrice = calculateTotal();
-    const deliveryCharge = 79;
-    const gstRate = 0.18;
-    const discount = totalPrice * 0.3;
-    const totalWithGST = totalPrice + totalPrice * gstRate;
-    const totalToPay = totalWithGST - discount + deliveryCharge;
-    return {
-      totalPrice: totalPrice.toFixed(2),
-      deliveryCharge,
-      gstAmount: (totalPrice * gstRate).toFixed(2),
-      discount: discount.toFixed(2),
-      totalToPay: totalToPay.toFixed(2),
-    };
+    const totalPrice = cartData.reduce(
+      (total, item) => total + item.quantity * item.price,
+      0
+    );
+    return totalPrice.toFixed(2);
   };
-
-  const { totalPrice, deliveryCharge, gstAmount, discount, totalToPay } = getTotalPrice();
 
   return (
     <div className="cart-container">
       <div className="cart-header">
         <h2 className="cart-title">YOUR CART</h2>
         <div className="cart-counting-box">
-          <span className="cart-count">{getTotalItems()}</span>
+          <span className="cart-count">{cartData.length}</span>
+        </div>
+      </div>
+
+      <div className="restaurant-section">
+        <img
+          className="restaurant-image"
+          src="restaurant-image.jpg"
+          alt="Restaurant"
+        />
+        <div className="restaurant-details">
+          <h3 className="restaurant-name">Restaurant Name</h3>
+          <p className="restaurant-address">Restaurant Address</p>
+          <p className="restaurant-info">Restaurant Details</p>
         </div>
       </div>
 
       <div className="cart-billing">
         <div className="itemsList">
-          {basket.length === 0 ? (
+          {cartData.length === 0 ? (
             <div className="empty-cart-message">Your cart is empty.</div>
           ) : (
-            basket.map((item) => (
+            cartData.map((item) => (
               <div className="cart-items" key={item.id}>
                 <div className="item-photo">
-                  <img src={require(`./photo/${item.image}`)} alt={item.name} />
+                  <img src={require("./photo/Meat-meal.png")} alt="find" />
                 </div>
                 <div className="item-details">
                   <div className="detail">
                     <i
-                      className="fa fa-times-circle"
+                      className="fa fa-xmark-circle"
                       onClick={() => removeItem(item.id)}
                     ></i>
                     <h4>
@@ -80,17 +118,14 @@ const Cart = () => {
                       <i className="fa fa-circle"></i>
                     </h4>
                     <p>Ref no : {item.RefNo}</p>
-                    {item.isVeg ? (
-                      <p>
-                        <i className="fa fa-check"></i>
-                        <span>Veg</span>
-                      </p>
-                    ) : (
-                      <p>
-                        <i className="fa fa-times"></i>
-                        <span>Non-Veg</span>
-                      </p>
-                    )}
+                    <p>
+                      <i className="fa fa-check"></i>
+                      <span>Click and Collect</span>
+                    </p>
+                    <p>
+                      <i className="fa fa-check"></i>
+                      <span>Home Delivery</span>
+                    </p>
                   </div>
                   <div className="quantity-price">
                     <p className="item-quantity">
@@ -128,9 +163,9 @@ const Cart = () => {
                 placeholder="Enter Your Coupon Here"
                 className="coupon-input"
               />
-              {/* <button className="coupon-btn" onClick={handleCartlyCoupon}>
+              <button className="coupon-btn" onClick={handleCartlyCoupon}>
                 Apply Coupon
-              </button> */}
+              </button>
             </div>
             <div className="billing-row">
               <span>Total Items:</span>
@@ -139,24 +174,24 @@ const Cart = () => {
 
             <div className="billing-row delivery-charge">
               <span>Delivery Charge (Rs):</span>
-              <span>{deliveryCharge}</span>
+              <span>79</span>
             </div>
             <div className="billing-row gst">
               <span>GST (18%):</span>
-              <span>{gstAmount}</span>
+              <span>{(calculateTotal() * 0.18).toFixed(2)}</span>
             </div>
             <div className="billing-row sub-total">
               <span>SubTotal Price (Rs):</span>
-              <span>{totalPrice}</span>
+              <span>{getTotalPrice()}</span>
             </div>
             <div className="billing-row discount">
               <span>Discount (Coupon Applied):</span>
-              <span>{discount}</span>
+              <span>{(calculateTotal() * 0.3).toFixed(2)}</span>
             </div>
             <div className="to-pay-section">
               <div className="section-title">To Pay</div>
               <div className="to-pay-amount">
-                Rs {totalToPay}
+                Rs {getTotalPrice() - (calculateTotal() * 0.3).toFixed(2)}
               </div>
             </div>
           </div>
@@ -165,16 +200,16 @@ const Cart = () => {
 
       <div className="kitchen-instruction">
         <div className="section-title">Add Kitchen Instruction</div>
-        {/* <textarea
+        <textarea
           className="instruction-textarea"
           placeholder="Enter your instruction"
           onChange={handleKitchenInstructionChange}
-        ></textarea> */}
+        ></textarea>
       </div>
       <div className="checkout-btn">
-        {/* <button className="checkout-btn" onClick={handleCheckout}>
+        <button className="checkout-btn" onClick={handleCheckout}>
           Checkout
-        </button> */}
+        </button>
       </div>
     </div>
   );

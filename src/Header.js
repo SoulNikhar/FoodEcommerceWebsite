@@ -28,13 +28,13 @@ render() {
         </div>
         <nav className="menu-option">
           <ul className="home">
-            <li>S
+            <li>
               <Link to = '/'>Home</Link>
             </li>
           </ul>
           <ul className="bestSeller">
           <li>
-              <Link to = '/main'>Best seller</Link>
+              <Link to = '/main'>Our Product</Link>
             </li>
           </ul>
           <div className="service">

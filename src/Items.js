@@ -197,8 +197,16 @@ import JsonItem from "./food.json";
 import Slider from "./Slider";
 import Footer from "./Footer";
 import { useStateValue } from "./StateProvider";
+import { useCartContext } from './CartContext';
+
 
 const Items = () => {
+
+//  This is for Add products to Cart Section
+
+const { addToCart } = useCartContext();
+
+
   const [{ basket }, dispatch] = useStateValue();
   const [flippedItems, setFlippedItems] = useState([]);
 
@@ -210,9 +218,9 @@ const Items = () => {
     }
   };
 
-  const addToCart = (item) => {
-    dispatch({ type: "ADD_TO_CART", payload: item });
-  };
+  // const addToCart = (item) => {
+  //   dispatch({ type: "ADD_TO_CART", payload: item });
+  // };
 
   return (
     <div className="product-body">
